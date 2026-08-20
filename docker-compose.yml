@@ -1,18 +1,5 @@
 version: "3.8"
 services:
-  caddy:
-    image: caddy
-    container_name: caddy
-    restart: unless-stopped
-    ports:
-      - 80:80
-      - 443:443
-    volumes:
-      - ./data:/data
-      - ./config:/config
-      - ./Caddyfile:/etc/caddy/Caddyfile:ro
-    networks:
-      - proxy-network
   workshop:
     image: ghcr.io/chrisspi/workshop:main
     ports:

@@ -1,0 +1,7 @@
+workshop.weare3d.de {
+        reverse_proxy n8n_n8n_1:5678
+}
+
+container.weare3d.de {
+        reverse_proxy n8n_workshop_1:3000
+}
